@@ -1,10 +1,18 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-image: url(https://media.istockphoto.com/id/172413295/photo/an-up-close-picture-of-report-card-grades.jpg?s=612x612&w=0&k=20&c=d95S74oUPLZA98yn6QKG0-6OEbgAqgroKzQWH5GxwKA=);
-  width: 100%;
-  height: 100vh;
-  background-position: center top;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .App {
+    background-size: contain; /* Slika će biti prikazana u cijelosti, bez iskrivljavanja */
+  }
 }
 
 .App-logo {
