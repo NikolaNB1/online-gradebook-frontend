@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import ProtectedRoute from "./shared/ProtectedRoute";
+import CreateGradebook from "./pages/CreateGradebook";
 
 function App() {
   return (
@@ -19,6 +20,14 @@ function App() {
         ></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route
+          path="/create"
+          element={
+            <ProtectedRoute>
+              <CreateGradebook />
+            </ProtectedRoute>
+          }
+        ></Route>
       </Routes>
     </div>
   );

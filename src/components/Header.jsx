@@ -29,7 +29,7 @@ const Header = () => {
               {loggedIn ? (
                 <>
                   <li>
-                    <Link to="/"></Link>
+                    <Link to="/create">Create New</Link>
                   </li>
                   <li>
                     <Link to="/"></Link>
